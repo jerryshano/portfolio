@@ -13,7 +13,7 @@ const Projects = () => {
         "Movie search app leveraging Context API for state management and local storage persistence",
       image: SpiderMan,
       techStack: ["React", "Tailwind CSS", "Axios"],
-      demo: "https://movie-browser-git-main-jerry-kankelborgs-projects.vercel.app/",
+      demo: "https://movie-browser-jade.vercel.app/",
       github: "https://github.com/jerryshano/movie-browser",
     },
     {
@@ -22,7 +22,7 @@ const Projects = () => {
         "Weather app demonstrating state, props, and API data fetching with city-based search functionality.",
       image: Weather,
       techStack: ["React", "Tailwind CSS", "Vite"],
-      demo: "https://weather-app-new-git-main-jerry-kankelborgs-projects.vercel.app/",
+      demo: "https://weather-app-new-lake.vercel.app/",
       github: "https://github.com/jerryshano/weather-app-new",
     },
     {
