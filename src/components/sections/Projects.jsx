@@ -21,7 +21,7 @@ const Projects = () => {
       description:
         "Weather app demonstrating state, props, and API data fetching with city-based search functionality.",
       image: Weather,
-      techStack: ["React", "styled-components"],
+      techStack: ["React", "Tailwind CSS", "Vite"],
       demo: "https://weather-app-new-git-main-jerry-kankelborgs-projects.vercel.app/",
       github: "https://github.com/jerryshano/weather-app-new",
     },
