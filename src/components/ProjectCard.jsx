@@ -1,7 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const ProjectCard = ({ title, image, description, techStack }) => {
+const ProjectCard = ({
+  title,
+  image,
+  description,
+  techStack,
+  demo,
+  github,
+}) => {
   return (
     <div className=" bg-gray-800 border border-white/10 hover:translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
       <img
@@ -22,18 +28,22 @@ const ProjectCard = ({ title, image, description, techStack }) => {
         ))}
       </div>
       <div className="flex justify-center items-center gap-8 pb-4">
-        <Link
-          to="/projects"
-          className=" text-blue-400  hover:text-blue-700 font-medium transition-colors hover:translate-y-0.5 "
+        <a
+          href={demo}
+          className="text-blue-400  hover:text-blue-700 font-medium transition-colors hover:translate-y-0.5 "
+          target="_blank"
+          rel="noopener noreferrer"
         >
           View Project →
-        </Link>
-        <Link
-          to="/contact"
-          className=" text-blue-400  hover:text-blue-700 font-medium transition-colors hover:translate-y-0.5 "
+        </a>
+        <a
+          href={github}
+          className="text-blue-400  hover:text-blue-700 font-medium transition-colors hover:translate-y-0.5 "
+          target="_blank"
+          rel="noopener noreferrer"
         >
           GitHub Repo →
-        </Link>
+        </a>
       </div>
     </div>
   );

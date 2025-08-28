@@ -2,7 +2,6 @@ import React from "react";
 import ProjectCard from "../ProjectCard.jsx";
 import SpiderMan from "../../assets/spidy.jpg";
 import Weather from "../../assets/weather.jpg";
-import Ethereum from "../../assets/ethereum.jpg";
 import Front from "../../assets/front.webp";
 import RevealOnScroll from "../RevealOnScroll.jsx";
 
@@ -11,30 +10,29 @@ const Projects = () => {
     {
       title: "Movie Browser",
       description:
-        "A brief description of Project One. This project showcases my skills in React and Tailwind CSS.",
+        "Movie search app leveraging Context API for state management and local storage persistence",
       image: SpiderMan,
-      techStack: ["React", "Tailwind CSS", "JavaScript"],
+      techStack: ["React", "Tailwind CSS", "Axios"],
+      demo: "https://movie-browser-git-main-jerry-kankelborgs-projects.vercel.app/",
+      github: "https://github.com/jerryshano/movie-browser",
     },
     {
       title: "Weather App",
       description:
-        "Another cool project with different tech stack. This project showcases my skills in React and Tailwind CSS.",
+        "Weather app demonstrating state, props, and API data fetching with city-based search functionality.",
       image: Weather,
-      techStack: ["Next.js", "TypeScript", "Node.js"],
-    },
-    {
-      title: "Crypto Tracker",
-      description:
-        "Another cool project with different tech stack. This project showcases my skills in React and Tailwind CSS.",
-      image: Ethereum,
-      techStack: ["Next.js", "TypeScript", "Node.js"],
+      techStack: ["React", "styled-components"],
+      demo: "https://weather-app-new-git-main-jerry-kankelborgs-projects.vercel.app/",
+      github: "https://github.com/jerryshano/weather-app-new",
     },
     {
       title: "Clearview CareHome",
       description:
-        "Another cool project with different tech stack. This project showcases my skills in React and Tailwind CSS.",
+        "Static production site demonstrating clean UI design and attracting real client engagement.",
       image: Front,
-      techStack: ["Next.js", "TypeScript", "Node.js"],
+      techStack: ["HTML", "CSS"],
+      demo: "https://clearviewcarehome.com/",
+      github: "https://github.com/jerryshano/clearview-app",
     },
   ];
 
