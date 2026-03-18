@@ -1,21 +1,12 @@
 import React from "react";
 import ProjectCard from "../ProjectCard.jsx";
-import SpiderMan from "../../assets/spidy.jpg";
+import Document from "../../assets/document.jpg";
 import Weather from "../../assets/weather.jpg";
 import Front from "../../assets/front.webp";
 import RevealOnScroll from "../RevealOnScroll.jsx";
 
 const Projects = () => {
   const projects = [
-    {
-      title: "Movie Browser",
-      description:
-        "Movie search app leveraging Context API for state management and local storage persistence",
-      image: SpiderMan,
-      techStack: ["React", "Tailwind CSS", "Axios"],
-      demo: "https://movie-browser-jade.vercel.app/",
-      github: "https://github.com/jerryshano/movie-browser",
-    },
     {
       title: "Weather App",
       description:
@@ -24,6 +15,15 @@ const Projects = () => {
       techStack: ["React", "Tailwind CSS", "Vite"],
       demo: "https://weather-app-new-lake.vercel.app/",
       github: "https://github.com/jerryshano/weather-app-new",
+    },
+    {
+      title: "Documentation Explainer",
+      description:
+        "AI-powered documentation explainer that transforms complex technical content into clear, level-based explanations with real-time streaming and follow-up Q&A.",
+      image: Document,
+      techStack: ["Next.js", "Shadcn", "OpenAI API"],
+      demo: "https://documentation-explainer-pd6p.vercel.app/",
+      github: "https://github.com/jerryshano/documentation-explainer",
     },
     {
       title: "Clearview CareHome",
