@@ -1,9 +1,7 @@
 # 🌐 Personal Portfolio
 
 A modern, responsive developer portfolio built with **React.js**, **Vite**, and **Tailwind CSS**.  
-While this portfolio started from a tutorial, I deliberately wrote all the code myself and studied every step.
-This project reflects not only my growing skills with React and Tailwind CSS, but also my ability to adapt and 
-extend an existing design into my own professional portfolio.
+
 ---
 
 ## 🚀 Features
