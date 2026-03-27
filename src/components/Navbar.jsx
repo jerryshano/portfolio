@@ -9,7 +9,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <a href="#home" className="font-mono text-xl font-bold text-white">
-            jerry<span className="text-blue-500">kankelborg</span>{" "}
+            jerry<span className="text-blue-500">kankelborg</span>
           </a>
 
           <div
@@ -24,29 +24,25 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
               href="#home"
               className="text-gray-300 hove:text-white transition-colors"
             >
-              {" "}
               Home
             </a>
             <a
               href="#about"
               className="text-gray-300 hove:text-white transition-colors"
             >
-              {" "}
-              About{" "}
+              About
             </a>
             <a
               href="#projects"
               className="text-gray-300 hove:text-white transition-colors"
             >
-              {" "}
-              Projects{" "}
+              Projects
             </a>
             <a
               href="#contact"
               className="text-gray-300 hove:text-white transition-colors"
             >
-              {" "}
-              Contact{" "}
+              Contact
             </a>
           </div>
         </div>
