@@ -9,7 +9,7 @@ const ProjectCard = ({
   github,
 }) => {
   return (
-    <div className=" bg-gray-800 border border-white/10 hover:translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
+    <div className="bg-gray-800 border border-white/10 hover:translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
       <img
         src={image}
         alt="Project 1"

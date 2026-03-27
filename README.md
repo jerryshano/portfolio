@@ -28,3 +28,4 @@ extend an existing design into my own professional portfolio.
    ```bash
    git clone https://github.com/yourusername/portfolio.git
    cd portfolio
+   npm run dev

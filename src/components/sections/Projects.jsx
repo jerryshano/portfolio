@@ -1,25 +1,25 @@
 import React from "react";
 import ProjectCard from "../ProjectCard.jsx";
 import Document from "../../assets/document.jpg";
-import Weather from "../../assets/weather.jpg";
+import Cart from "../../assets/cart.jpg";
 import Front from "../../assets/front.webp";
 import RevealOnScroll from "../RevealOnScroll.jsx";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Weather App",
+      title: "Shopping Cart",
       description:
-        "Weather app demonstrating state, props, and API data fetching with city-based search functionality.",
-      image: Weather,
-      techStack: ["React", "Tailwind CSS", "Vite"],
-      demo: "https://weather-app-new-lake.vercel.app/",
-      github: "https://github.com/jerryshano/weather-app-new",
+        "Built a modern e-commerce shopping application with Redux Toolkit for data management. Implemented robust cart features.",
+      image: Cart,
+      techStack: ["React", "Tailwind", "Redux Toolkit"],
+      demo: "https://shopping-cart-ebon-eight.vercel.app/",
+      github: "https://github.com/jerryshano/shopping-cart",
     },
     {
       title: "Documentation Explainer",
       description:
-        "AI-powered documentation explainer that transforms complex technical content into clear, level-based explanations with real-time streaming and follow-up Q&A.",
+        "AI-powered documentation explainer that transforms complex technical content into clear explanations with follow-up Q&A.",
       image: Document,
       techStack: ["Next.js", "Shadcn", "OpenAI API"],
       demo: "https://documentation-explainer-pd6p.vercel.app/",
@@ -28,9 +28,9 @@ const Projects = () => {
     {
       title: "Clearview CareHome",
       description:
-        "Static production site demonstrating clean UI design and attracting real client engagement.",
+        "Live care home website with a responsive layout, semantic HTML/CSS, and clear navigation so families can explore services.",
       image: Front,
-      techStack: ["HTML", "CSS"],
+      techStack: ["HTML5", "Responsive", "CSS3"],
       demo: "https://clearviewcarehome.com/",
       github: "https://github.com/jerryshano/clearview-app",
     },

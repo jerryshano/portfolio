@@ -3,13 +3,13 @@ import RevealOnScroll from "../RevealOnScroll.jsx";
 
 const About = () => {
   const frontendSkills = [
-    "HTML",
-    "CSS",
-    "JavaScript",
+    "Next.js",
     "React",
     "Tailwind CSS",
-    "Shadcn",
-    "Sass",
+    "JavaScript",
+    "TypeScript",
+    "Shadcn UI",
+    "Redux",
   ];
 
   return (
@@ -38,6 +38,20 @@ const About = () => {
                   </span>
                 ))}
               </div>
+            </div>
+            <div className="p-6 rounded-xl hover:translate-y-1 transition-transform duration-300">
+              <h3 className="text-xl mb-4 font-bold">🛠️ Internship Experience</h3>
+              <ul className="list-disc list-inside text-left text-gray-300 space-y-2">
+                <li>
+                  <strong>Frontend Developer Intern</strong> - Triplemeter 
+                  Engineering
+                </li>
+                <li>
+                  Shipped high-performance UI components in a production environment,
+                  resulting in positive customer feedback and significantly improved interface
+                  intuitiveness.
+                </li>
+              </ul>
             </div>
             <div className="p-6 rounded-xl hover:translate-y-1 transition-transform duration-300">
               <h3 className="text-xl mb-4 font-bold">🏫 Education</h3>
