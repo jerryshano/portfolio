@@ -41,7 +41,7 @@ const About = () => {
             </div>
             <div className="p-6 rounded-xl hover:translate-y-1 transition-transform duration-300">
               <h3 className="text-xl mb-4 font-bold">🛠️ Internship Experience</h3>
-              <ul className="list-disc list-inside text-left text-gray-300 space-y-2">
+              <ul className="list-disc list-inside pl-5 m-0 text-left text-gray-300 space-y-2">
                 <li>
                   <strong>Frontend Developer Intern</strong> - Triplemeter 
                   Engineering
@@ -55,7 +55,7 @@ const About = () => {
             </div>
             <div className="p-6 rounded-xl hover:translate-y-1 transition-transform duration-300">
               <h3 className="text-xl mb-4 font-bold">🏫 Education</h3>
-              <ul className="list-disc list-inside text-left text-gray-300 space-y-2">
+              <ul className="list-disc list-inside pl-5 m-0 text-left text-gray-300 space-y-2">
                 <li>
                   <strong>B.S. in Computer Science</strong> - California State
                   University Monterey Bay

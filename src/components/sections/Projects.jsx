@@ -8,15 +8,6 @@ import RevealOnScroll from "../RevealOnScroll.jsx";
 const Projects = () => {
   const projects = [
     {
-      title: "Shopping Cart",
-      description:
-        "Built a modern e-commerce shopping application with Redux Toolkit for data management. Implemented robust cart features.",
-      image: Cart,
-      techStack: ["React", "Tailwind", "Redux Toolkit"],
-      demo: "https://shopping-cart-ebon-eight.vercel.app/",
-      github: "https://github.com/jerryshano/shopping-cart",
-    },
-    {
       title: "Documentation Explainer",
       description:
         "AI-powered documentation explainer that transforms complex technical content into clear explanations with follow-up Q&A.",
@@ -24,6 +15,15 @@ const Projects = () => {
       techStack: ["Next.js", "Shadcn", "OpenAI API"],
       demo: "https://documentation-explainer-pd6p.vercel.app/",
       github: "https://github.com/jerryshano/documentation-explainer",
+    },
+    {
+      title: "Shopping Cart",
+      description:
+        "Built a modern e-commerce shopping application with Redux Toolkit for data management. Implemented robust cart features.",
+      image: Cart,
+      techStack: ["React", "Tailwind", "Redux Toolkit"],
+      demo: "https://shopping-cart-ebon-eight.vercel.app/",
+      github: "https://github.com/jerryshano/shopping-cart",
     },
     {
       title: "Clearview CareHome",
