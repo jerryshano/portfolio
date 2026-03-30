@@ -13,8 +13,7 @@ const Home = () => {
             Hi, I'm Jerry Kankelborg
           </h1>
           <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-            A passionate software developer specializing in building exceptional
-            digital experiences.
+            Frontend Developer specializing in React & Next.js, building high-performance web applications and AI-powered tools.
           </p>
           <div className="flex justify-center space-x-4">
             <a

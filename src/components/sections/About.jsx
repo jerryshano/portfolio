@@ -47,7 +47,7 @@ const About = () => {
                   Engineering
                 </li>
                 <li>
-                  Shipped high-performance UI components in a production environment,
+                  Experience working in a production environment, shipping high-performance UI components,
                   resulting in positive customer feedback and significantly improved interface
                   intuitiveness.
                 </li>

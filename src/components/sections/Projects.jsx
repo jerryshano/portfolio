@@ -8,20 +8,20 @@ import RevealOnScroll from "../RevealOnScroll.jsx";
 const Projects = () => {
   const projects = [
     {
-      title: "Documentation Explainer",
+      title: "AI Documentation Assistant",
       description:
-        "AI-powered documentation explainer that transforms complex technical content into clear explanations with follow-up Q&A.",
+        "Helps developers understand complex documentation faster using AI-generated structured explanations and follow-up Q&A",
       image: Document,
       techStack: ["Next.js", "Shadcn", "OpenAI API"],
-      demo: "https://documentation-explainer-pd6p.vercel.app/",
-      github: "https://github.com/jerryshano/documentation-explainer",
+      demo: "https://ai-documentation-assistant-jerry.vercel.app/",
+      github: "https://github.com/jerryshano/ai-documentation-assistant",
     },
     {
-      title: "Shopping Cart",
+      title: "E-Commerce Platform",
       description:
         "Built a modern e-commerce shopping application with Redux Toolkit for data management. Implemented robust cart features.",
       image: Cart,
-      techStack: ["React", "Tailwind", "Redux Toolkit"],
+      techStack: ["React", "Tailwind", "Redux"],
       demo: "https://shopping-cart-ebon-eight.vercel.app/",
       github: "https://github.com/jerryshano/shopping-cart",
     },

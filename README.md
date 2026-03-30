@@ -26,4 +26,5 @@ A modern, responsive developer portfolio built with **React.js**, **Vite**, and 
    ```bash
    git clone https://github.com/yourusername/portfolio.git
    cd portfolio
+   npm install
    npm run dev
