@@ -5,16 +5,16 @@ import Cart from "../../assets/cart.jpg";
 import Front from "../../assets/front.webp";
 import RevealOnScroll from "../RevealOnScroll.jsx";
 
-const Projects = () => {
+const Projects = ({ onOpenCaseStudy }) => {
   const projects = [
     {
       title: "AI Documentation Assistant",
       description:
-        "Helps developers understand complex documentation faster using AI-generated structured explanations and follow-up Q&A",
+        "AI tool that helps developers quickly understand complex documentation through structured explanations, reducing time spent parsing dense technical content.",
       image: Document,
       techStack: ["Next.js", "Shadcn", "OpenAI API"],
-      demo: "https://ai-documentation-assistant-jerry.vercel.app/",
-      github: "https://github.com/jerryshano/ai-documentation-assistant",
+      demo: "https://documentation-explainer-pd6p.vercel.app/",
+      github: "https://github.com/jerryshano/Documentation-Explainer",
     },
     {
       title: "E-Commerce Platform",
@@ -48,7 +48,14 @@ const Projects = () => {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
-              <ProjectCard key={index} {...project} />
+              <ProjectCard
+                key={index}
+                index={index}
+                {...project}
+                onCaseStudyClick={
+                  index === 0 && onOpenCaseStudy ? onOpenCaseStudy : undefined
+                }
+              />
             ))}
           </div>
         </div>

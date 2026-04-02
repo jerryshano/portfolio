@@ -24,7 +24,9 @@ const About = () => {
           </h2>
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all duration-300">
             <p className="text-gray-300 mb-4">
-              I am a passionate developer with a love for creating
+              Frontend developer focused on building high-performance,
+              user-friendly applications using React, Next.js, and TypeScript,
+              with experience shipping production UI and AI-powered interfaces.
             </p>
             <div className="rounded-xl p-6 hover:translate-y-1 transition-transform duration-300">
               <h3 className="text-xl font-bold mb-4">Frontend</h3>
@@ -40,16 +42,18 @@ const About = () => {
               </div>
             </div>
             <div className="p-6 rounded-xl hover:translate-y-1 transition-transform duration-300">
-              <h3 className="text-xl mb-4 font-bold">🛠️ Internship Experience</h3>
+              <h3 className="text-xl mb-4 font-bold">
+                🛠️ Internship Experience
+              </h3>
               <ul className="list-disc list-inside pl-5 m-0 text-left text-gray-300 space-y-2">
                 <li>
-                  <strong>Frontend Developer Intern</strong> - Triplemeter 
+                  <strong>Frontend Developer Intern</strong> - Triplemeter
                   Engineering
                 </li>
                 <li>
-                  Experience working in a production environment, shipping high-performance UI components,
-                  resulting in positive customer feedback and significantly improved interface
-                  intuitiveness.
+                  Experience working in a production environment, shipping
+                  high-performance UI components, resulting in positive customer
+                  feedback and significantly improved interface intuitiveness.
                 </li>
               </ul>
             </div>

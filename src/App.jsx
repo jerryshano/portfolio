@@ -9,10 +9,13 @@ import Contact from "./components/sections/Contact";
 import Projects from "./components/sections/Projects";
 import MobileMenu from "./components/MobileMenu.jsx";
 import Navbar from "./components/Navbar";
+import AICaseStudy from "./components/AICaseStudy.jsx";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
   return (
     <Router>
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
@@ -21,10 +24,16 @@ function App() {
       >
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <Home />
-        <About />
-        <Projects />
-        <Contact />
+        {selectedProject === "ai-docs" ? (
+          <AICaseStudy onBack={() => setSelectedProject(null)} />
+        ) : (
+          <>
+            <Home />
+            <About />
+            <Projects onOpenCaseStudy={() => setSelectedProject("ai-docs")} />
+            <Contact />
+          </>
+        )}
       </div>
     </Router>
   );
