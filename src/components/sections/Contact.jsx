@@ -8,20 +8,30 @@ const Contact = () => {
     email: "",
     message: "",
   });
-  const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-  const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+  const serviceID = import.meta.env.VITE_SERVICE_ID;
+  const templateID = import.meta.env.VITE_CONTACT_FORM;
+  const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm(serviceID, templateID, e.target, publicKey).then(
+    const form = e.currentTarget;
+    if (!serviceID || !templateID || !publicKey) {
+      alert(
+        "Contact form is not configured. Set VITE_SERVICE_ID, VITE_CONTACT_FORM, and VITE_PUBLIC_KEY for your build.",
+      );
+      return;
+    }
+    emailjs.sendForm(serviceID, templateID, form, publicKey).then(
       (result) => {
-        console.log(result.text);
         setFormData({ name: "", email: "", message: "" });
         alert("Message sent successfully!");
       },
       (error) => {
-        console.log(error.text);
+        const detail =
+          typeof error === "string"
+            ? error
+            : error?.text ?? JSON.stringify(error);
+        console.error("EmailJS error:", detail);
         alert("An error occurred, please try again.");
       },
     );
@@ -82,7 +92,10 @@ const Contact = () => {
                 placeholder="Your message..."
               />
             </div>
-            <button className="w-full py-3 px-6 bg-blue-600 text-white rounded-md hover:bg-blue-700 font-medium transition relative overflow-hidden hover:translate-y-0.5 5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]">
+            <button
+              type="submit"
+              className="w-full py-3 px-6 bg-blue-600 text-white rounded-md hover:bg-blue-700 font-medium transition relative overflow-hidden hover:translate-y-0.5 5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+            >
               Send
             </button>
           </form>
