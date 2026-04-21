@@ -22,7 +22,7 @@ const Contact = () => {
       return;
     }
     emailjs.sendForm(serviceID, templateID, form, publicKey).then(
-      (result) => {
+      () => {
         setFormData({ name: "", email: "", message: "" });
         alert("Message sent successfully!");
       },
@@ -30,7 +30,7 @@ const Contact = () => {
         const detail =
           typeof error === "string"
             ? error
-            : error?.text ?? JSON.stringify(error);
+            : (error?.text ?? JSON.stringify(error));
         console.error("EmailJS error:", detail);
         alert("An error occurred, please try again.");
       },

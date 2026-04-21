@@ -10,7 +10,7 @@ const Projects = ({ onOpenCaseStudy }) => {
     {
       title: "AI Documentation Assistant",
       description:
-        "AI tool that helps developers quickly understand complex documentation through structured explanations, reducing time spent parsing dense technical content.",
+        "AI-powered documentation assistant with real-time streaming responses and persistent chat history, designed to help developers understand complex technical content through structured, interactive explanations.",
       image: Document,
       techStack: ["Next.js", "Shadcn", "OpenAI API"],
       demo: "https://documentation-explainer-pd6p.vercel.app/",
